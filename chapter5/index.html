@@ -42,18 +42,18 @@
 
 <h1><span>Chapter 5:</span> Couches</h1>
 
-<p>Dans son livre original <cite id="How%20Buildings%20Learn">"How Buildings Learn"</cite> <span id="Stewart%20Brand">Stewart Brand</span> souligne un idée de l’architecte britannique <span id="Frank%20Duffy">Frank Duffy</span>:</p>
+<p>Dans son livre original <cite id="How%20Buildings%20Learn">"How Buildings Learn"</cite> <span id="Stewart%20Brand">Stewart Brand</span> souligne une idée de l’architecte britannique <span id="Frank%20Duffy">Frank Duffy</span>:</p>
 
 <blockquote>
-<p>"Un bâtiment correctement conçu à plusieurs couches de longévité."</p>
+<p>"Un bâtiment correctement conçu est fondé sur plusieurs couches de longévité."</p>
 </blockquote>
 
-<p>Duffy les a appelés “couches de cisaillement”. Chacune de ces couches se déplacent avec une échelle de temps différente. La marque s’est développée sur l’idée et à proposée six couches allitératives:</p>
+<p>Duffy les a appelés “couches de cisaillement”. Chacune de ces couches se déplacent avec une échelle de temps différente. Brand a approfondis l’idée en proposant six couches allitératives :</p>
 
 <ol>
 <li><strong>Le site</strong>—l’emplacement physique d’un bâtiment ne change que sur une échelle de temps géologique.</li>
 <li><strong>La structure</strong>—le bâtiment lui-même peut tenir des siècles.</li>
-<li><strong>L'apparence</strong>— la surface extérieure peut avoir un lifting ou un nouveau coup de peinture tout les dix ans..</li>
+<li><strong>L'apparence</strong>— la surface extérieure peut avoir un lifting ou un nouveau coup de peinture tout les dix ans.</li>
 <li><strong>Les services</strong>—la plomberie et le câblage doivent être mis à jour tous les dix ans environ.</li>
 <li><strong>Le plan de l'espaces</strong>—la disposition des murs et des portes peut changer occasionnellement.</li>
 <li><strong>L'équipement</strong>—la disposition des meubles dans une pièce peut changer tous les jours.</li>
@@ -68,31 +68,33 @@
 <figcaption>Shearing layers.</figcaption>
 </figure>
 
-<p>Cette idée de couches de cisaillement peut aussi être appliqué à nos créations sur le web. Nos noms de domaine sont les sites géologiques sur lesquels nous construisons. A l’autre bout de l’échelle de temps, le contenu du web (l’équipement) peut être ajouté et mis à jour à chaque heure, chaque minute, ou même chaque seconde. Entre ces dernières se trouve les couches structurelles, la présentation et le comportement : <abbr>HTML</abbr>, <abbr>CSS</abbr>, et JavaScript.</p>
+<p>Cette idée de couches de cisaillement peut aussi être appliqué à nos créations sur le web. Nos noms de domaine sont les sites géologiques sur lesquels nous construisons. A l’autre bout de l’échelle de temps, le contenu du web (l’équipement) peut être ajouté et mis à jour à chaque heure, chaque minute, ou même chaque seconde. Et au milieu se trouvent les couches structurelles, la présentation et le comportement : <abbr>HTML</abbr>, <abbr>CSS</abbr>, et JavaScript.</p>
 
 <p>Ces couches peuvent être faiblement couplées, mais elles ne sont pas complétement indépendantes. Comme un bâtiment ne peut avoir de meuble sans avoir d’abord des pièces et des murs, une feuille de style a besoin d’un balisage pour agir. Le couplage entre structure et présentation est géré par des sélecteurs en <abbr>CSS</abbr>: des sélecteurs d’éléments, des sélecteurs de classes, etc. Avec JavaScript, le couplage est géré par le vocabulaire du <span id="Document%20Object%20Model">“Document Object Model”</span>, ou <abbr>DOM</abbr>.</p>
 
-<p>Dans un livre ultérieur, <cite id="The%20Clock%20Of%20The%20Long%20Now">The Clock Of The Long Now</cite>, Stewart Brand appliqua cette idée de couches de cisaillement –ou couche de rythme– à la civilisation elle-même. La couche mobile la plus lente est la nature, puis la culture, suivie par la gouvernance, puis l’infrastructure, et finalement le commerce et la mode sont les couches les plus rapides. D’une manière faiblement couplée, chaque couche dépend de celle d’en dessous. A son tour, l’accumulation de chaque couche successive permet un agencement possible rempli de plus d’opportunité.</p>
+<p>Dans un livre ultérieur, <cite id="The%20Clock%20Of%20The%20Long%20Now">The Clock Of The Long Now</cite>, Stewart Brand a appliqué cette idée de couches de cisaillement –ou couche de rythme– à la civilisation elle-même. La couche mobile la plus lente est la nature, puis la culture, suivie par la gouvernance, puis l’infrastructure, et finalement le commerce et la mode sont les couches les plus rapides. D’une manière faiblement couplée, chaque couche dépend de celle d’en dessous. A son tour, l’accumulation de chaque couche successive permet un agencement possible rempli de plus d’opportunité.</p>
 
 <p>De même, l’expression du <abbr>CSS</abbr> et du JavaScript est seulement possible sur la base <abbr>HTML</abbr>, qui elle-même à besoin d’une <abbr>URL</abbr> accessible qui dépend à son tour de l’Hyper Text Transfer Protocol (HTTP), qui se situe au sommet du <abbr>TCP/IP</abbr>.</p>
 
-<p>Chacune de ces couches de cisaillement web peut être épluchée et peut révéler une autre couche en dessous. Ce principe marche aussi en sens inverse –applicable à chaque couche– et c’est un principe clé du web resilient.</p>
+<p>Chacune de ces couches de cisaillement web peu être épluchées et peuvent révéler une autre couche en dessous. Ce principe marche aussi en sens inverse –applicable à chaque couche– et c’est un principe clé du web resilient.</p>
 
 <section aria-labelledby="progressiveenhancement">
 
 <h2 id="progressiveenhancement">Une amélioration progressive</h2>
 
-<p>En 2003, le festival <span id="South%20by%20Southwest">South by Southwest</span> à Austin, au Texas était à l’origine un événement pour les musiciens et les réalisateurs de film. Aujourd’hui, la partie sur la musique et les films est totalement ‘‘effacé’’ par le mastodonte de South by Southwest Interactive, qui est dédié à toutes les choses en rapport avec le digital. En 2003, South by Southwest Interactive n’était qu’une petite entreprise, ‘‘entassé dans un coin’’ de l’Austin Convention Center. Ce fut l’occasion pour quelques web designer et blogeurs de se rassembler et de partager leurs idées. Cette années, <span id="Steven%20Champeon">Steven Champeon</span> et <span id="Nick%20Finck">Nick Finck</span> ont présenté une présentation intitulée <em id="Inclusive%20Web%20Design%20For%20the%20Future%20with%20Progressive%20Enhancement">"Inclusive Web Design For the Future with Progressive Enhancement"</em>. Ils ont ouvert cette présentation avec un appel aux armes:</p>
+<p>En 2003, le festival <span id="South%20by%20Southwest">South by Southwest</span> à Austin, au Texas était à l’origine un événement pour les musiciens et les réalisateurs de film. Aujourd’hui, la partie sur la musique et les films est totalement ‘‘effacé’’ par le mastodonte de South by Southwest Interactive, qui est dédié à tout ce qui touche au numérique. En 2003, South by Southwest Interactive n’était qu’une petite affaire, comprimée dans un coin de l’Austin Convention Center. Ce fut l’occasion pour quelques web designer et blogeurs de se rassembler et de partager leurs idées. Cette années, <span id="Steven%20Champeon">Steven Champeon</span> et <span id="Nick%20Finck">Nick Finck</span> ont présenté une présentation intitulée <em id="Inclusive%20Web%20Design%20For%20the%20Future%20with%20Progressive%20Enhancement">"Inclusive Web Design For the Future with Progressive Enhancement"</em>. Ils ont commencé cette présentation avec cet appel aux armes:</p>
 
 <blockquote>
-<p>Le design web doit mûrir et accepter les développements des dernières années, abandonner les attitudes séctaires formées pendant la chute de la rude ère dotcom, réaliser le futur proche d’une grande variété d’appareils et de plates-formes, et séparer le balisage sémantique de la présentation logique et des comportements.</p>
+
+<p>“Web design must mature and accept the developments of the past several years, abandon the exclusionary attitudes formed in the rough and tumble dotcom era, realize the coming future of a wide variety of devices and platforms, and separate semantic markup from presentation logic and behavior.”</p>
+<p>“Le webdesign doit mûrir et accepter les développements de ces dernières années, abandonner les attitudes sectaires formées pendant l’ère agitée du dotcom, comprendre l’arrivée imminente d’une grande variété d’appareils et de plates-formes, et séparer le balisage sémantique de la logique de présentation et des comportements.</p>
 </blockquote>
 
-<p>Comme Tim Berners-Lee, Steven Champeon avait l’expérience de travailler avec le <abbr>SGML</abbr>, le langage de balisage qui aurait fortement influencer le <abbr>HTML</abbr>. En traitant des documents qui devaient être réutilisés pour des différentes ‘‘sorties’’, il est venu à mettre en valeur la séparation de la structure de la présentation. Un document balisé de manière singnificative peut être représenté de plusieurs façons grâce à l’addition du <abbr>CSS</abbr> et du JavaScript.</p>
+<p>Comme Tim Berners-Lee, Steven Champeon avait déjà une expérience dans le <abbr>SGML</abbr>, le langage de balisage qui allait si fortement influencer le <abbr>HTML</abbr>. En traitant des documents qui avaient besoin d'être redéfinit pour différents produits, il en est venu à apprécier la séparation de la structure et de la présentation. Un document balisé de manière pertinente peut être représenté de multiples façons grâce à l’addition du <abbr>CSS</abbr> et du JavaScript.</p>
 
-<p>Cette approché segmenté du web permet à une grande variété de personne d’avoir le même contenu. Mais ceci ne veux pas dire que tout le monde à la même expérience. Champeon a réalisé qu’une forte séparation des préoccupations permettrait d’appliquer une amélioration en fonction des capacités de l’appareil de l’utilisateur finale.</p>
+<p>Cette approche du web par couche permet à une grande variété de personne d’avoir le même contenu. Mais ceci ne veux pas dire que tout le monde à la même expérience. Champeon a réalisé qu’une forte séparation des préoccupations permettrait d’appliquer une amélioration en fonction des capacités de l’appareil de l’utilisateur finale.</p>
 
-<p>Pour paraphraser <span id="Karl%20Marx">Karl Marx</span>, Pour paraphraser Karl Marx, l’amélioration progressive permet aux designers de Demander à chaque navigateur en fonction de sa capacité, et de délivrer à chaque appareil en fonction de ce qu’il a besoin.</p>
+<p>Pour paraphraser <span id="Karl%20Marx">Karl Marx</span>, l’amélioration progressive permet aux designers de demander à chaque navigateur en fonction de ses capacités, et de délivrer à chaque appareil en fonction de ce qu’il a besoin.</p>
 
 </section>
 
@@ -100,32 +102,32 @@
 
 <h2 id="dowebsitesneedtolookexactlythesameineverybrowser">Les sites internets doivent-ils avoir exactement la même apparence dans tous les navigateurs ?</h2>
 
-<p>Certains concepteurs de sites Web étaient préoccupés par le fait que l’amélioration progressive serait une camisole de force de la créativité. Concevoir pour le plus petit dénominateur commun ne semblait pas être une recette de progrès. Mais c’était un malentendu. L’amélioration progressive demande aux concepteurs de partir du plus petit dénominateur commun (un document bien balisé), mais il n’y a pas de limite à l’endroit où ils peuvent aller à partir de là.</p>
+<p>Certains Web designers étaient préoccupés par le fait que l’amélioration progressive serait une entrave pour la créativité. Concevoir pour le plus petit dénominateur commun ne semblait pas être une recette de progrès. Mais c’était un malentendu. L’amélioration progressive demande bien aux concepteurs de partir du plus petit dénominateur commun (un document bien balisé), mais ils ne sont pas limités dans ce qu'ils pourront faire à partir de là.</p>
 
-<p>En fait, c’est la présence même d’une ligne de base solide de <abbr>HTML</abbr>qui permet aux concepteurs de sites Web d’expérimenter avec les dernières et meilleures <abbr>CSS</abbr>.Grâce à la loi de Postel et au modèle de gestion des erreurs de <abbr>CSS</abbr>, les concepteurs sont libres d’appliquer des styles qui ne fonctionnent que dans les navigateurs les plus récents.</p>
+<p>En fait, c’est la présence même d’une ligne de base solide de <abbr>HTML</abbr>qui permet aux web designers d’expérimenter avec les meilleures et plus récents <abbr>CSS</abbr>.Grâce à la loi de Postel et au modèle de gestion des erreurs de <abbr>CSS</abbr>, les designers sont libres d’appliquer des styles qui ne fonctionnent que dans les navigateurs les plus récents.</p>
 
-<p>Cela signifie que tout le monde n’aura pas le même design visuel. Ce n’est pas un bug. C’est une caractéristique du web. Nouveaux navigateurs et anciens navigateurs affichages monochromes et affichages multicolores; connexions rapides et connexions lentes; de grands écrans, de petits écrans et pas d’écrans; tout le monde peut accéder à votre contenu. Ce contenu <em>devrait</em> être différent dans des situations aussi variées. Si un site Web a la même apparence sur un navigateur vieux de dix ans que sur les nouveaux appareils, il ne profite probablement pas de la grande flexibilité offerte par le Web.</p>
+<p>Cela signifie que tout le monde n’aura pas le même design visuel. Ce n’est pas un bug. C’est une caractéristique du web. Nouveaux navigateurs et anciens navigateurs, affichages monochromes et affichages multicolores; connexions rapides et connexions lentes; de grands écrans, de petits écrans et pas d’écrans; tout le monde peut accéder à votre contenu. Ce contenu <em>devrait</em> être différent dans des situations aussi variées. Si un site Web a la même apparence sur un navigateur vieux de dix ans que sur les nouveaux appareils, alors il ne profite probablement pas de la grande flexibilité qu'offre Web.</p>
 
 <p>Pour souligner cela, le designer <span id="Dan%20Cederholm">Dan Cederholm</span> a créé un site Web pour répondre à la question «Les sites Web doivent-ils être exactement identiques dans tous les navigateurs?» Vous pouvez trouver la réponse à cette question à l’adresse <abbr><abbr>URL</abbr></abbr> suivante:</p>
 
 <p>do<wbr>websites<wbr>need<wbr>to<wbr>look<wbr>exactly<wbr>the<wbr>same<wbr>in<wbr>every<wbr>browser<wbr>.com</p>
 
-<p>Au risque de gâcher la surprise pour vous, la réponse est un «Non!» Retentissant. Si vous visitez ce site Web, vous verrez cette réponse fièrement affichée. Mais en fonction des capacités de votre navigateur, vous pouvez ou non voir certains des styles stylistiques appliqués à cette réponse à un seul mot. Même si vous n’obtenez aucun des styles, vous obtiendrez toujours le contenu balisé avec du <abbr>HTML</abbr> semantique.</p>
+<p>Au risque de gâcher la surprise pour vous, la réponse est un «Non!» Retentissant. Si vous visitez ce site Web, vous verrez cette réponse fièrement affichée. Mais selon les capacités de votre navigateur, vous pourrez, ou non, voir certains styles appliqués à cette réponse. Même si vous n’obtenez aucun des styles, vous obtiendrez toujours le contenu balisé avec du <abbr>HTML</abbr> semantique.</p>
 
 </section>
 
 <section aria-labelledby="cuttingthemustard">
 
-<h2 id="cuttingthemustard">Être à la hauteur</h2>
+<h2 id="cuttingthemustard">Cutting the mustard</h2>
 
-<p> Séparer la structure et la présentation est relativement simple. Vous pouvez déclarer tous les styles que vous voulez tout en sachant que les navigateurs ignoreront ce qu’ils ne comprennent pas. Séparer structure et comportement n’est pas aussi simple. Si vous donnez à un navigateur du Javascript qu’il ne comprend pas, non seulement il n’appliquera pas le comportement désiré, mais ils refusera d’analyser le reste du Javascript.</p>
+<p> Séparer la structure et la présentation est relativement simple. Vous pouvez déclarer tous les styles que vous voulez tout en sachant que les navigateurs ignoreront ce qu’ils ne comprennent pas. Séparer la structure et le comportement n’est pas aussi simple. Si vous donnez à un navigateur du Javascript qu’il ne comprend pas, non seulement il n’appliquera pas le comportement désiré, mais ils refusera d’analyser le reste du Javascript.</p>
 
-<p>Avant d’utiliser une fonctionnalité particulière en Javascript, il est important de vérifier si elle est prise en charge. Ce type de fonctionnalité évitera aux visiteurs de votre site une mauvaise expérience lié à une fonctionnalité non prise en charge. Si vous voulez utiliser l’Ajax, vérifiez d’abord que le navigateur supporte l’objet que vous allez utiliser pour activer cette fonctionnalité.
+<p>Avant d’utiliser une fonctionnalité particulière en Javascript, il est important de vérifier si cette fonctionalité est prise en charge. Ce type de fonctionnalité évitera aux visiteurs de votre site une mauvaise expérience à cause d'une fonctionnalité non prise en charge. Si vous voulez utiliser l’Ajax, vérifiez d’abord que le navigateur supporte l’objet que vous allez utiliser pour activer cette fonctionnalité Ajax.
 Si vous souhaitez utiliser une <abbr>API</abbr> de géolocalisation, vérifiez d’abord que les navigateurs la prennent en charge.</p>
 
-<p>Une équipe de développeur web travaillant sur le nouveaux site de la <abbr>BBC</abbr> a appelé ce genre d’outil/fonctionnalité de détection “cutting the mustard”. Les navigateurs qui “cutting the mustard” ont une meilleure expérience. Les navigateurs qui eux ne le font pas ont toujours accès au contenue mais sans les “amélioration” du Javascript.</p>
+<p>Une équipe de développeurs web travaillant sur le nouveau site de la <abbr>BBC</abbr> faisaient référence à ce type de détection de fonctionalité par  “cutting the mustard” (Ndrl: répondre aux attentes). Les navigateurs qui répondent aux attentes ont une expérience améliorée. Les navigateurs qui eux ne le font pas ont toujours accès au contenue mais sans les “amélioration” du Javascript.</p>
 
-<p>Fonctionalité de détection, "cutting the mustard", qu'importe comment vous voulez l'appeler, est une technique plutôt direct. Imaginons que vous voulez franchir le <abbr>DOM</abbr> en utilisant <code>querySelector</code> and attach events to some nodes in the document using <code>addEventListener</code>. Your mustard‐cutting logic might look something like this:</p>
+<p>Détection de fonctionalité, cutting the mustard, quel que soit le nom que vous lui donnait, est une technique assez simple. Disons que vous voulez parcourir le <abbr>DOM</abbr> en utilisant les <code>querySelector</code> et attacher des événements à des noeuds dans le docuement en utilisant <code>addEventListener</code>. Votre logique "cutting the mustard" pourrait ressembler à ceci :</p>
 
 <pre><code>if (document.querySelector &amp;&amp; window.addEventListener) {
     // Enhance!
@@ -134,7 +136,7 @@ Si vous souhaitez utiliser une <abbr>API</abbr> de géolocalisation, vérifiez d
 <p>Il y a deux points à noter ici :</p>
 
 <ol>
-<li>Cela détecte les fonctionalité, pas les navigateurs. Plutôt que de demander “quel navigateur est-tu?” et essayer d’en déduire le support par rapport à la réponse, il est plus simple de demander “est-ce que tu supporte cette fonctionnalité ?”</li>
+<li>C'est de la détectaion de fonctionalité, pas de la détection de navigateur. Plutôt que de demander “quel navigateur es-tu?” et essayer d’en déduire la prise en charge des fonctionalités en fonction de la réponse, il est plus sûr de simplement demander “est-ce que tu supportes cette fonctionnalité ?”</li>
 <li>Il n’y a pas de déclaration <code>"else"</code>.</li>
 </ol>
 
@@ -146,7 +148,7 @@ Si vous souhaitez utiliser une <abbr>API</abbr> de géolocalisation, vérifiez d
 
 <p>A l'époque où les designers essayaient d'exercer le même contrôle qu'en imprimerie sur les navigateurs web, la réussite d'un design était mesurée au pixel près : le site web a-t-il toujours exactement le même rendu dans tous les navigateurs ?</p>
 
-<p>A moins que tous les navigateurs gèrent une caractéristique particulière – comme par exemple des coins arrondis dans le <abbr>CSS</abbr>—cette caractéristique n'était pas employée. A la place, les designers la simulait avec des balises supplémentaires et des images. Les sites web qui en résultaient manquaient d'efficacité au niveau de leur structure. Ce n'était pas seulement une perte de talent et d'énergie pour les designers, c'était un gâchis des capacités des navigateurs modernes.</p>
+<p>A moins que tous les navigateurs gèrent une fonctionalité particulière – comme, par exemple, des coins arrondis dans le <abbr>CSS</abbr>—cette fonctionalité n'était pas employée. A la place, les designers la simulait avec des balises supplémentaires et des images. Les sites web qui en résultaient manquaient d'efficacité au niveau de leur structure. Ce n'était pas seulement une perte de talent et d'énergie pour les designers, c'était un gâchis des capacités des navigateurs modernes.</p>
 
 <p>Le développement des portables, des tablettes et du responsive design a aidé à perdre cette mentalité contraignante. Il n'est plus réaliste désormais d'attendre une similitude au pixel près entre tous les équipements et les navigateurs. Mais vous trouverez encore des webdesigners déplorant le fait qu'ils doivent prendre en compte un navigateur dépassé parce qu'une part de leur audience l'utilise toujours.</p>
 
@@ -156,7 +158,7 @@ Si vous souhaitez utiliser une <abbr>API</abbr> de géolocalisation, vérifiez d
 <p>Il y a une différence entre supporter et optimiser.</p>
 </blockquote>
 
-<p><em>Supportez</em> chaque navigateur ...mais <em>optimisez</em> pour aucun.</p>
+<p><em>Supportez</em> chaque navigateur ...mais <em>n'optimisez</em> pour aucun.</p>
 
 <p>Certains designers ont mal compris l'amélioration continue comme étant le fait de devoir fournir l'ensemble des fonctionnalités à tous les utilisateurs. C'est l'opposé. L'amélioration continue signifie fournir la fonctionnalité principale à tout le monde. Après ça, chaque navigateur se débrouille. Loin de limiter quelles fonctionnalités vous pouvez utiliser, l'amélioration continue fournit aux web-designers un moyen sûr d'utiliser les dernières fonctionnalités à la pointe de la technologie sans s'inquiéter des navigateurs plus anciens. <span id="Scott%20Jehl">Scott Jehl</span> of the agency <span id="Filament%20Group">de l'agence Filament Group</span> le dit succinctement:</p>
 
